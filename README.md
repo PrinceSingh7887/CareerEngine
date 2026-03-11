@@ -199,6 +199,84 @@ Apply for Bihar Police
 <p>© 2026 Career Engine</p>
 
 </footer>
+  <footer>
+
+<p>Contact Us</p>
+
+<p>📧 princeraj788778@gmail.com</p>
+
+<p>© 2026 Career Engine</p>
+
+</footer>
+
+
+<!-- Telegram Popup -->
+
+<style>
+#telegramPopup{
+position:fixed;
+bottom:20px;
+right:20px;
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+text-align:center;
+z-index:9999;
+}
+
+#telegramPopup h3{
+margin-top:0;
+color:#0088cc;
+}
+
+#telegramPopup a{
+display:inline-block;
+background:#0088cc;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+#telegramPopup button{
+margin-top:10px;
+border:none;
+background:red;
+color:white;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+
+<div id="telegramPopup">
+
+<h3>Join Our Telegram 📢</h3>
+
+<p>Latest Govt Jobs & Updates</p>
+
+<a href="https://t.me/+cyXfZ7H8-Tw2NDE9" target="_blank">
+Join Telegram
+</a>
+
+<br><br>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+
+<script>
+function closePopup(){
+document.getElementById("telegramPopup").style.display="none";
+}
+</script>
+
+
+</body>
+</html>
 
 </body>
 </html>
