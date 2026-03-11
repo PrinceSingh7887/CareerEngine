@@ -23,8 +23,21 @@ font-size:32px;
 }
 
 nav{
-background:#0d47a1;
+background:white;
 padding:12px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a{
+color:#1565c0;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#0d47a1;
 }
 
 nav a:hover{
@@ -249,3 +262,4 @@ document.getElementById("telegramPopup").style.display="none";
 </body>
 
 </html>
+
