@@ -78,7 +78,68 @@ Welcome to Career Engine 🚀
 <div class="section">
 
 <h2>Latest Jobs</h2>
+  <h2>Apply for Government Jobs</h2>
 
+<br>
+
+<a href="https://ssc.gov.in/" target="_blank" style="
+background:#1a73e8;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+margin:10px;
+display:inline-block;
+">
+SSC Official Website
+</a>
+
+<br><br>
+
+<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" style="
+background:#2e7d32;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+margin:10px;
+display:inline-block;
+">
+Railway Apply Portal
+</a>
+<h3>Latest Jobs</h3>
+
+<ul>
+
+<li>
+🚆 Railway RRB Recruitment  
+<br>
+<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank">
+Apply Here
+</a>
+</li>
+
+<br>
+
+<li>
+📚 SSC Recruitment  
+<br>
+<a href="https://ssc.gov.in/" target="_blank">
+Visit SSC Website
+</a>
+</li>
+
+<br>
+
+<li>
+👮 Bihar Police Recruitment  
+<br>
+<a href="https://bpsconline.bihar.gov.in/candidate/login" target="_blank">
+Apply for Bihar Police
+</a>
+</li>
+
+</ul>
 <div class="jobs">
 
 <p>🚆 Railway RRB Group D Recruitment 2026</p>
