@@ -45,6 +45,26 @@ border-radius:10px;
 box-shadow:0px 0px 10px #ccc;
 }
 
+.ce-section{
+background:white;
+width:70%;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 0px 10px #bbb;
+margin-top:40px;
+}
+
+.download-btn{
+background:#ff9800;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+display:inline-block;
+margin:10px;
+}
+
 footer{
 background:#222;
 color:white;
@@ -73,14 +93,12 @@ Welcome to Career Engine 🚀
 <a href="#">Latest Jobs</a>
 <a href="#">Results</a>
 <a href="#">Admit Card</a>
+<a href="#civil">Civil Engineering</a>
 </nav>
 
 <div class="section">
 
 <h2>Latest Jobs</h2>
-  <h2>Apply for Government Jobs</h2>
-
-<br>
 
 <a href="https://ssc.gov.in/" target="_blank" style="
 background:#1a73e8;
@@ -89,12 +107,9 @@ padding:12px 25px;
 text-decoration:none;
 border-radius:6px;
 margin:10px;
-display:inline-block;
-">
+display:inline-block;">
 SSC Official Website
 </a>
-
-<br><br>
 
 <a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" style="
 background:#2e7d32;
@@ -103,10 +118,10 @@ padding:12px 25px;
 text-decoration:none;
 border-radius:6px;
 margin:10px;
-display:inline-block;
-">
+display:inline-block;">
 Railway Apply Portal
 </a>
+
 <h3>Latest Jobs</h3>
 
 <ul>
@@ -140,6 +155,7 @@ Apply for Bihar Police
 </li>
 
 </ul>
+
 <div class="jobs">
 
 <p>🚆 Railway RRB Group D Recruitment 2026</p>
@@ -148,12 +164,31 @@ Apply for Bihar Police
 
 </div>
 
-<h2>Study & Career</h2>
+</div>
 
-<img src="https://cdn-icons-png.flaticon.com/512/744/744465.png">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+<!-- Civil Engineering Section -->
+
+<div class="ce-section" id="civil">
+
+<h2>🏗 Civil Engineering Knowledge</h2>
+
+<p>Download useful Civil Engineering Study Materials and AutoCAD Drawings</p>
+
+<h3>AutoCAD Files</h3>
+
+<a href="COMPLETE 3D FILE.dwg" class="download-btn" download>
+📐 Download AutoCAD Drawing
+</a>
+
+<br>
+
+<a href="Unit-01 ,(CEMENT).pdf" class="download-btn" download>
+📘 Download Cement Notes
+</a>
 
 </div>
+
 
 <footer>
 
@@ -166,5 +201,4 @@ Apply for Bihar Police
 </footer>
 
 </body>
-
 </html>
