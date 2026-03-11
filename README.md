@@ -1,24 +1,32 @@
-# CareerEngine
-Engine provides the latest government job alerts, exam updates, results, and career opportunities to help students build a successful future.
 <!DOCTYPE html>
 <html>
 <head>
 <title>Career Engine - Government Job Updates</title>
 </head>
 
-<body>
+<body style="font-family:Arial; text-align:center;">
 
 <h1>Career Engine</h1>
 <h2>Latest Government Job Updates</h2>
 
+<h3>Latest Jobs</h3>
 <ul>
-<li>RRB Group D Notification 2026</li>
-<li>SSC JE 2026 Application Form</li>
+<li>RRB Group D Recruitment 2026</li>
+<li>SSC JE Notification 2026</li>
 <li>Bihar Police Vacancy 2026</li>
 </ul>
 
-<p>Welcome to Career Engine. Here you will get latest government job updates, results and exam notifications.</p>
+<h3>Results</h3>
+<ul>
+<li>SSC Result 2026</li>
+<li>Railway Result 2026</li>
+</ul>
+
+<h3>Admit Card</h3>
+<ul>
+<li>RRB Admit Card</li>
+<li>SSC Admit Card</li>
+</ul>
 
 </body>
-
 </html>
