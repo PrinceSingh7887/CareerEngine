@@ -1,106 +1,122 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
 <title>Career Engine</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-text-align:center;
-background:url("https://images.unsplash.com/photo-1474487548417-781cb71495f3") center/cover no-repeat fixed;
+font-family:'Poppins', sans-serif;
+background:#f5f7fa;
 }
 
+/* HEADER */
 header{
-background:rgba(26,115,232,0.9);
+background:#0f172a;
 color:white;
-padding:25px;
-font-size:32px;
+padding:20px;
+text-align:center;
+font-size:28px;
 }
 
+/* NAVBAR */
 nav{
-background:white;
+background:#1e293b;
 padding:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
 nav a{
-color:#1565c0;
-margin:15px;
+color:white;
+margin:10px;
 text-decoration:none;
-font-size:18px;
-font-weight:bold;
+font-size:16px;
+font-weight:500;
+padding:6px 10px;
 }
 
 nav a:hover{
-color:#0d47a1;
+background:#2563eb;
+border-radius:6px;
 }
 
-nav a:hover{
-background:#1565c0;
-padding:8px 15px;
-border-radius:5px;
-}
-
+/* SECTION */
 .section{
-padding:40px;
+padding:30px;
+text-align:center;
 }
 
-.jobs{
+/* CARD */
+.card{
 background:white;
-width:65%;
+margin:10px auto;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:80%;
+max-width:500px;
+}
+
+/* BUTTON */
+.btn{
+background:#2563eb;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* CIVIL SECTION */
+.ce-section{
+background:white;
+width:80%;
 margin:auto;
 padding:25px;
 border-radius:10px;
 box-shadow:0 0 10px #ccc;
+margin-top:30px;
+text-align:center;
 }
 
-.ce-section{
-background:white;
-width:70%;
-margin:auto;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px #bbb;
-margin-top:40px;
-}
-
-.download-btn{
-background:#ff9800;
-color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:6px;
-display:inline-block;
-margin:10px;
-}
-
+/* FOOTER */
 footer{
-background:#222;
+background:#0f172a;
 color:white;
-padding:20px;
-margin-top:40px;
+padding:15px;
+text-align:center;
+margin-top:30px;
 }
 
+/* IMAGE */
 img{
-width:140px;
-margin:10px;
+width:120px;
+margin:8px;
+border-radius:10px;
 }
 
+/* KALAM IMAGE */
 #kalam{
 position:fixed;
 top:15px;
 left:15px;
-width:90px;
+width:80px;
 border-radius:50%;
 border:3px solid white;
-box-shadow:0 0 12px rgba(0,0,0,0.5);
-z-index:999;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
+
+/* TELEGRAM POPUP */
 #telegramPopup{
 position:fixed;
 bottom:20px;
@@ -110,22 +126,15 @@ padding:20px;
 width:260px;
 border-radius:10px;
 box-shadow:0 0 15px rgba(0,0,0,0.3);
-z-index:9999;
-}
-
-#telegramPopup h3{
-margin-top:0;
-color:#0088cc;
 }
 
 #telegramPopup a{
-display:inline-block;
 background:#0088cc;
 color:white;
-padding:10px 20px;
+padding:8px 15px;
 border-radius:6px;
 text-decoration:none;
-margin-top:10px;
+display:inline-block;
 }
 
 #telegramPopup button{
@@ -147,39 +156,35 @@ cursor:pointer;
 <img id="kalam" src="https://speakola.com/political/dr-a-p-j-abdul-kalam-vision-for-india-2011.jpg">
 
 <header>
-
-Welcome to Career Engine 🚀
-
-<p style="font-size:16px">
-Latest Government Job Updates
-</p>
-
+Career Engine 🚀
+<p style="font-size:14px">Latest Government Job Updates</p>
 </header>
 
 <nav>
-
-<a href="#">Home</a> <a href="#">Latest Jobs</a> <a href="#">Results</a> <a href="#">Admit Card</a> <a href="#civil">Civil Engineering</a>
-
+<a href="#">Home</a>
+<a href="#">Latest Jobs</a>
+<a href="#">Results</a>
+<a href="#">Admit Card</a>
+<a href="#civil">Civil</a>
 </nav>
 
 <div class="section">
 
 <h2>Latest Jobs</h2>
 
-<a href="https://ssc.gov.in/" target="_blank" class="download-btn">
-SSC Official Website
-</a>
+<div class="card">
+<h3>🚆 Railway RRB Group D Recruitment 2026</h3>
+<a href="#" class="btn">Apply Now</a>
+</div>
 
-<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="download-btn">
-Railway Apply Portal
-</a>
+<div class="card">
+<h3>📚 SSC JE Notification 2026</h3>
+<a href="#" class="btn">View Details</a>
+</div>
 
-<div class="jobs">
-
-<p>🚆 Railway RRB Group D Recruitment 2026</p>
-<p>📚 SSC JE Notification 2026</p>
-<p>👮 Bihar Police Vacancy 2026</p>
-
+<div class="card">
+<h3>👮 Bihar Police Vacancy 2026</h3>
+<a href="#" class="btn">Apply Now</a>
 </div>
 
 </div>
@@ -188,46 +193,35 @@ Railway Apply Portal
 
 <h2>🏗 Civil Engineering Knowledge</h2>
 
-<p>
-Download useful Civil Engineering Study Materials and AutoCAD Drawings
-</p>
+<p>Download study materials & AutoCAD files</p>
 
 <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
 
-<h3>AutoCAD Files</h3>
+<br><br>
 
-<a href="COMPLETE 3D FILE.dwg" class="download-btn" download>
-📐 Download AutoCAD Drawing
+<a href="COMPLETE 3D FILE.dwg" class="btn" download>
+📐 AutoCAD Drawing
 </a>
 
-<br>
-
-<a href="Unit-01 ,(CEMENT).pdf" class="download-btn" download>
-📘 Download Cement Notes
+<a href="Unit-01 ,(CEMENT).pdf" class="btn" download>
+📘 Cement Notes
 </a>
 
 </div>
 
-<section style="padding:40px;background:#f1f1f1">
+<section style="padding:30px;text-align:center">
 
-<h2>Sarkari Results</h2>
+<h2>Results</h2>
 
-<ul style="list-style:none;font-size:18px">
-
-<li><a href="#">RRB JE Result</a></li>
-<li><a href="#">SSC JE Result</a></li>
-<li><a href="#">Railway Group D Result</a></li>
-<li><a href="#">SSC GD Result</a></li>
-
-</ul>
+<div class="card">RRB JE Result</div>
+<div class="card">SSC JE Result</div>
+<div class="card">Railway Group D Result</div>
 
 </section>
 
 <footer>
-
-<p>Contact Us</p>
 
 <p>📧 princeraj788778@gmail.com</p>
 
@@ -237,13 +231,11 @@ Download useful Civil Engineering Study Materials and AutoCAD Drawings
 
 <div id="telegramPopup">
 
-<h3>Join Our Telegram 📢</h3>
+<h3>Join Telegram 📢</h3>
 
-<p>Latest Govt Jobs & Updates</p>
+<p>Latest Job Updates</p>
 
-<a href="https://t.me/careerengine" target="_blank">
-Join Telegram
-</a>
+<a href="https://t.me/careerengine" target="_blank">Join Now</a>
 
 <br><br>
 
@@ -252,15 +244,10 @@ Join Telegram
 </div>
 
 <script>
-
 function closePopup(){
 document.getElementById("telegramPopup").style.display="none";
 }
-
 </script>
 
 </body>
-
 </html>
-
-
