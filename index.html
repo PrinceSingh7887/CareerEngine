@@ -190,17 +190,24 @@ Career Engine 🚀
 
 <div class="card">
 <h3>🚆 Railway RRB Group D Recruitment 2026</h3>
-<a href="#" class="btn">Apply Now</a>
+<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="btn">
+Apply Now
+</a>
 </div>
 
 <div class="card">
 <h3>📚 SSC JE Notification 2026</h3>
-<a href="#" class="btn">View Details</a>
+<a href="https://www.ssc.gov.in//#/auth/home" target="_blank" class="btn">
+Apply Now
+</a>
 </div>
 
 <div class="card">
-<h3>👮 Bihar Police Vacancy 2026</h3>
-<a href="#" class="btn">Apply Now</a>
+<h3>👮 Rajiv Gandhi Proudyogiki Vishwavidyalaya
+Airport Road, Bhopal-462033, Madhya Pradesh</h3>
+<a href="https://www.rgpv.ac.in/Index.aspx//#/auth/home" target="_blank" class="btn">
+Apply Now
+</a>
 </div>
 
 </div>
@@ -223,7 +230,7 @@ Career Engine 🚀
 <h2>Results</h2>
 <div class="card">RRB JE Result</div>
 <div class="card">SSC JE Result</div>
-<div class="card">Railway Group D Result</div>
+<div class="card">Railway Result</div>
 </section>
 
 <footer>
