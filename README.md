@@ -9,7 +9,15 @@
 body{
 margin:0;
 font-family:'Poppins', sans-serif;
-background:#f5f7fa;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 /* HEADER */
@@ -20,6 +28,7 @@ padding:20px;
 text-align:center;
 font-size:28px;
 position:relative;
+z-index:1001;
 }
 
 /* MENU BUTTON */
@@ -34,14 +43,15 @@ font-size:22px;
 /* SIDEBAR */
 #menu{
 position:fixed;
-right:-250px;
+right:-260px;
 top:0;
-width:250px;
-height:100%;
+width:260px;
+height:100vh;
 background:#1e293b;
 color:white;
 padding:20px;
 transition:0.3s;
+z-index:1000;
 }
 
 /* NAVBAR */
@@ -69,17 +79,24 @@ border-radius:6px;
 .section{
 padding:30px;
 text-align:center;
+max-width:900px;
+margin:auto;
 }
 
 /* CARD */
 .card{
 background:white;
-margin:10px auto;
-padding:15px;
+margin:15px auto;
+padding:20px;
 border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-width:80%;
-max-width:500px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+width:100%;
+max-width:600px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 /* NORMAL BUTTON */
@@ -90,7 +107,7 @@ padding:8px 15px;
 border-radius:6px;
 text-decoration:none;
 display:inline-block;
-margin-top:10px;
+margin:5px;
 }
 
 /* RED APPLY BUTTON */
@@ -114,7 +131,7 @@ margin-top:10px;
 /* CIVIL SECTION */
 .ce-section{
 background:white;
-width:80%;
+width:90%;
 margin:auto;
 padding:25px;
 border-radius:10px;
@@ -134,7 +151,7 @@ margin-top:30px;
 
 /* IMAGE */
 img{
-width:120px;
+width:100px;
 margin:8px;
 border-radius:10px;
 }
@@ -144,10 +161,9 @@ border-radius:10px;
 position:fixed;
 top:15px;
 left:15px;
-width:80px;
+width:70px;
 border-radius:50%;
 border:3px solid white;
-box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 
 /* TELEGRAM POPUP */
@@ -161,6 +177,7 @@ padding:20px;
 width:260px;
 border-radius:10px;
 box-shadow:0 0 15px rgba(0,0,0,0.3);
+z-index:999;
 }
 
 #telegramPopup a{
@@ -196,7 +213,6 @@ font-weight:bold;
 box-shadow:0 4px 10px rgba(0,0,0,0.3);
 animation:blink 1.5s infinite;
 }
-
 </style>
 </head>
 
@@ -230,16 +246,12 @@ Career Engine 🚀
 
 <div class="card">
 <h3>🚆 Railway RRB Group D Recruitment 2026</h3>
-<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="apply-btn">
-Apply Now
-</a>
+<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="apply-btn">Apply Now</a>
 </div>
 
 <div class="card">
 <h3>📚 SSC JE Notification 2026</h3>
-<a href="https://ssc.gov.in/" target="_blank" class="apply-btn">
-Apply Now
-</a>
+<a href="https://ssc.gov.in/" target="_blank" class="apply-btn">Apply Now</a>
 </div>
 
 <div class="card">
@@ -299,7 +311,7 @@ function toggleMenu(){
 let menu = document.getElementById("menu");
 
 if(menu.style.right === "0px"){
-menu.style.right = "-250px";
+menu.style.right = "-260px";
 }else{
 menu.style.right = "0px";
 }
