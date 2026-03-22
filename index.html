@@ -1,90 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career Engine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
 body{
 margin:0;
-font-family:Arial;
-background:#f5f5f5;
+font-family:'Poppins', sans-serif;
+background:#f5f7fa;
 }
 
 /* HEADER */
 header{
-background:#b30000;
+background:#0f172a;
 color:white;
-padding:15px;
+padding:20px;
 text-align:center;
-font-size:24px;
-font-weight:bold;
+font-size:28px;
 }
 
 /* NAVBAR */
 nav{
-background:#000;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+background:#1e293b;
+padding:12px;
+text-align:center;
 }
 
 nav a{
 color:white;
-padding:10px 15px;
+margin:10px;
 text-decoration:none;
+font-size:16px;
+font-weight:500;
+padding:6px 10px;
 }
 
 nav a:hover{
-background:#b30000;
+background:#2563eb;
+border-radius:6px;
 }
 
-/* BOX SECTION */
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-padding:20px;
+/* SECTION */
+.section{
+padding:30px;
+text-align:center;
 }
 
-.box{
+/* CARD */
+.card{
 background:white;
+margin:10px auto;
 padding:15px;
-border-radius:8px;
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:80%;
+max-width:500px;
 }
 
-.box h3{
-color:#b30000;
-margin-top:0;
-}
-
-.box a{
-display:block;
-color:#000;
+/* BUTTON */
+.btn{
+background:#2563eb;
+color:white;
+padding:8px 15px;
+border-radius:6px;
 text-decoration:none;
-margin:5px 0;
+display:inline-block;
+margin-top:10px;
 }
 
-.box a:hover{
-text-decoration:underline;
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* CIVIL SECTION */
+.ce-section{
+background:white;
+width:80%;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px #ccc;
+margin-top:30px;
+text-align:center;
 }
 
 /* FOOTER */
 footer{
-background:#000;
+background:#0f172a;
 color:white;
+padding:15px;
 text-align:center;
-padding:10px;
+margin-top:30px;
+}
+
+/* IMAGE */
+img{
+width:120px;
+margin:8px;
+border-radius:10px;
+}
+
+/* KALAM IMAGE */
+#kalam{
+position:fixed;
+top:15px;
+left:15px;
+width:80px;
+border-radius:50%;
+border:3px solid white;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+/* TELEGRAM POPUP */
+#telegramPopup{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+#telegramPopup a{
+background:#0088cc;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+}
+
+#telegramPopup button{
+margin-top:10px;
+border:none;
+background:red;
+color:white;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FLOATING TELEGRAM BUTTON */
+.telegram-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0088cc;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+animation:blink 1.5s infinite;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0.6;}
+100%{opacity:1;}
 }
 </style>
 </head>
 
 <body>
 
+<img id="kalam" src="https://speakola.com/political/dr-a-p-j-abdul-kalam-vision-for-india-2011.jpg">
+
 <header>
 Career Engine 🚀
+<p style="font-size:14px">Latest Government Job Updates</p>
 </header>
 
 <nav>
@@ -92,42 +182,79 @@ Career Engine 🚀
 <a href="#">Latest Jobs</a>
 <a href="#">Results</a>
 <a href="#">Admit Card</a>
-<a href="#">Answer Key</a>
+<a href="#civil">Civil</a>
 </nav>
 
-<div class="container">
+<div class="section">
+<h2>Latest Jobs</h2>
 
-<div class="box">
-<h3>Latest Jobs</h3>
-<a href="#">SSC GD Recruitment 2026</a>
-<a href="#">Railway Group D</a>
-<a href="#">UP Police Vacancy</a>
+<div class="card">
+<h3>🚆 Railway RRB Group D Recruitment 2026</h3>
+<a href="#" class="btn">Apply Now</a>
 </div>
 
-<div class="box">
-<h3>Results</h3>
-<a href="#">SSC CGL Result</a>
-<a href="#">UP Board Result</a>
-<a href="#">Railway NTPC Result</a>
+<div class="card">
+<h3>📚 SSC JE Notification 2026</h3>
+<a href="#" class="btn">View Details</a>
 </div>
 
-<div class="box">
-<h3>Admit Card</h3>
-<a href="#">SSC CHSL Admit Card</a>
-<a href="#">UPSC Admit Card</a>
-</div>
-
-<div class="box">
-<h3>Answer Key</h3>
-<a href="#">SSC Answer Key</a>
-<a href="#">Railway Answer Key</a>
+<div class="card">
+<h3>👮 Bihar Police Vacancy 2026</h3>
+<a href="#" class="btn">Apply Now</a>
 </div>
 
 </div>
+
+<div class="ce-section" id="civil">
+<h2>🏗 Civil Engineering Knowledge</h2>
+<p>Download study materials & AutoCAD files</p>
+
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+
+<br><br>
+
+<a href="COMPLETE 3D FILE.dwg" class="btn" download> 📐 AutoCAD Drawing </a>
+<a href="Unit-01 ,(CEMENT).pdf" class="btn" download> 📘 Cement Notes </a>
+</div>
+
+<section style="padding:30px;text-align:center">
+<h2>Results</h2>
+<div class="card">RRB JE Result</div>
+<div class="card">SSC JE Result</div>
+<div class="card">Railway Group D Result</div>
+</section>
 
 <footer>
-© 2026 Career Engine | Made by Prince ❤️
+<p>📧 princeraj788778@gmail.com</p>
+<p>© 2026 Career Engine</p>
 </footer>
+
+<!-- TELEGRAM POPUP -->
+<div id="telegramPopup">
+<h3>Join Telegram 📢</h3>
+<p>Latest Job Updates</p>
+<a href="https://t.me/careerengine" target="_blank">Join Now</a>
+<br><br>
+<button onclick="closePopup()">Close</button>
+</div>
+
+<!-- FLOATING BUTTON -->
+<a href="https://t.me/careerengine" target="_blank" class="telegram-float">
+📢 Join Telegram
+</a>
+
+<script>
+function closePopup(){
+document.getElementById("telegramPopup").style.display="none";
+}
+
+// show popup after 3 sec
+setTimeout(function(){
+document.getElementById("telegramPopup").style.display="block";
+},3000);
+</script>
 
 </body>
 </html>
