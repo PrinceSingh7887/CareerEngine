@@ -1,265 +1,133 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career Engine</title>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial;
-text-align:center;
-background:url("https://images.unsplash.com/photo-1474487548417-781cb71495f3") center/cover no-repeat fixed;
+background:#f5f5f5;
 }
 
+/* HEADER */
 header{
-background:rgba(26,115,232,0.9);
+background:#b30000;
 color:white;
-padding:25px;
-font-size:32px;
-}
-
-nav{
-background:white;
-padding:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-nav a{
-color:#1565c0;
-margin:15px;
-text-decoration:none;
-font-size:18px;
+padding:15px;
+text-align:center;
+font-size:24px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#0d47a1;
+/* NAVBAR */
+nav{
+background:#000;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
 
-nav a:hover{
-background:#1565c0;
-padding:8px 15px;
-border-radius:5px;
-}
-
-.section{
-padding:40px;
-}
-
-.jobs{
-background:white;
-width:65%;
-margin:auto;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-
-.ce-section{
-background:white;
-width:70%;
-margin:auto;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px #bbb;
-margin-top:40px;
-}
-
-.download-btn{
-background:#ff9800;
+nav a{
 color:white;
-padding:12px 25px;
+padding:10px 15px;
 text-decoration:none;
-border-radius:6px;
-display:inline-block;
-margin:10px;
 }
 
-footer{
-background:#222;
-color:white;
+nav a:hover{
+background:#b30000;
+}
+
+/* BOX SECTION */
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
 padding:20px;
-margin-top:40px;
 }
 
-img{
-width:140px;
-margin:10px;
-}
-
-#kalam{
-position:fixed;
-top:15px;
-left:15px;
-width:90px;
-border-radius:50%;
-border:3px solid white;
-box-shadow:0 0 12px rgba(0,0,0,0.5);
-z-index:999;
-}
-#telegramPopup{
-position:fixed;
-bottom:20px;
-right:20px;
+.box{
 background:white;
-padding:20px;
-width:260px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.3);
-z-index:9999;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
-#telegramPopup h3{
+.box h3{
+color:#b30000;
 margin-top:0;
-color:#0088cc;
 }
 
-#telegramPopup a{
-display:inline-block;
-background:#0088cc;
-color:white;
-padding:10px 20px;
-border-radius:6px;
+.box a{
+display:block;
+color:#000;
 text-decoration:none;
-margin-top:10px;
+margin:5px 0;
 }
 
-#telegramPopup button{
-margin-top:10px;
-border:none;
-background:red;
+.box a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+background:#000;
 color:white;
-padding:6px 10px;
-border-radius:5px;
-cursor:pointer;
+text-align:center;
+padding:10px;
 }
-
 </style>
-
 </head>
 
 <body>
 
-<img id="kalam" src="https://upload.wikimedia.org/wikipedia/commons/9/99/A._P._J._Abdul_Kalam.jpg">
-
 <header>
-
-Welcome to Career Engine 🚀
-
-<p style="font-size:16px">
-Latest Government Job Updates
-</p>
-
+Career Engine 🚀
 </header>
 
 <nav>
-
-<a href="#">Home</a> <a href="#">Latest Jobs</a> <a href="#">Results</a> <a href="#">Admit Card</a> <a href="#civil">Civil Engineering</a>
-
+<a href="#">Home</a>
+<a href="#">Latest Jobs</a>
+<a href="#">Results</a>
+<a href="#">Admit Card</a>
+<a href="#">Answer Key</a>
 </nav>
 
-<div class="section">
+<div class="container">
 
-<h2>Latest Jobs</h2>
+<div class="box">
+<h3>Latest Jobs</h3>
+<a href="#">SSC GD Recruitment 2026</a>
+<a href="#">Railway Group D</a>
+<a href="#">UP Police Vacancy</a>
+</div>
 
-<a href="https://ssc.gov.in/" target="_blank" class="download-btn">
-SSC Official Website
-</a>
+<div class="box">
+<h3>Results</h3>
+<a href="#">SSC CGL Result</a>
+<a href="#">UP Board Result</a>
+<a href="#">Railway NTPC Result</a>
+</div>
 
-<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="download-btn">
-Railway Apply Portal
-</a>
+<div class="box">
+<h3>Admit Card</h3>
+<a href="#">SSC CHSL Admit Card</a>
+<a href="#">UPSC Admit Card</a>
+</div>
 
-<div class="jobs">
-
-<p>🚆 Railway RRB Group D Recruitment 2026</p>
-<p>📚 SSC JE Notification 2026</p>
-<p>👮 Bihar Police Vacancy 2026</p>
-
+<div class="box">
+<h3>Answer Key</h3>
+<a href="#">SSC Answer Key</a>
+<a href="#">Railway Answer Key</a>
 </div>
 
 </div>
-
-<div class="ce-section" id="civil">
-
-<h2>🏗 Civil Engineering Knowledge</h2>
-
-<p>
-Download useful Civil Engineering Study Materials and AutoCAD Drawings
-</p>
-
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
-
-<h3>AutoCAD Files</h3>
-
-<a href="COMPLETE 3D FILE.dwg" class="download-btn" download>
-📐 Download AutoCAD Drawing
-</a>
-
-<br>
-
-<a href="Unit-01 ,(CEMENT).pdf" class="download-btn" download>
-📘 Download Cement Notes
-</a>
-
-</div>
-
-<section style="padding:40px;background:#f1f1f1">
-
-<h2>Sarkari Results</h2>
-
-<ul style="list-style:none;font-size:18px">
-
-<li><a href="#">RRB JE Result</a></li>
-<li><a href="#">SSC JE Result</a></li>
-<li><a href="#">Railway Group D Result</a></li>
-<li><a href="#">SSC GD Result</a></li>
-
-</ul>
-
-</section>
 
 <footer>
-
-<p>Contact Us</p>
-
-<p>📧 princeraj788778@gmail.com</p>
-
-<p>© 2026 Career Engine</p>
-
+© 2026 Career Engine | Made by Prince ❤️
 </footer>
 
-<div id="telegramPopup">
-
-<h3>Join Our Telegram 📢</h3>
-
-<p>Latest Govt Jobs & Updates</p>
-
-<a href="https://t.me/careerengine" target="_blank">
-Join Telegram
-</a>
-
-<br><br>
-
-<button onclick="closePopup()">Close</button>
-
-</div>
-
-<script>
-
-function closePopup(){
-document.getElementById("telegramPopup").style.display="none";
-}
-
-</script>
-
 </body>
-
 </html>
-
