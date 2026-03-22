@@ -218,7 +218,7 @@ animation:blink 1.5s infinite;
 
 <body>
 
-<img id="kalam" src="https://speakola.com/political/dr-a-p-j-abdul-kalam-vision-for-india-2011.jpg">
+<img id="logo" src="logo.png">
 
 <header>
 Career Engine 🚀
