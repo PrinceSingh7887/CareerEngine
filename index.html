@@ -19,6 +19,29 @@ color:white;
 padding:20px;
 text-align:center;
 font-size:28px;
+position:relative;
+}
+
+/* MENU BUTTON */
+.menu-btn{
+position:absolute;
+right:20px;
+top:20px;
+cursor:pointer;
+font-size:22px;
+}
+
+/* SIDEBAR */
+#menu{
+position:fixed;
+right:-250px;
+top:0;
+width:250px;
+height:100%;
+background:#1e293b;
+color:white;
+padding:20px;
+transition:0.3s;
 }
 
 /* NAVBAR */
@@ -59,7 +82,7 @@ width:80%;
 max-width:500px;
 }
 
-/* BUTTON */
+/* NORMAL BUTTON */
 .btn{
 background:#2563eb;
 color:white;
@@ -70,8 +93,22 @@ display:inline-block;
 margin-top:10px;
 }
 
-.btn:hover{
-background:#1d4ed8;
+/* RED APPLY BUTTON */
+.apply-btn{
+background:red;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+animation:blink 1s infinite;
+margin-top:10px;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0.5;}
+100%{opacity:1;}
 }
 
 /* CIVIL SECTION */
@@ -160,11 +197,6 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 animation:blink 1.5s infinite;
 }
 
-@keyframes blink{
-0%{opacity:1;}
-50%{opacity:0.6;}
-100%{opacity:1;}
-}
 </style>
 </head>
 
@@ -175,7 +207,15 @@ animation:blink 1.5s infinite;
 <header>
 Career Engine 🚀
 <p style="font-size:14px">Latest Government Job Updates</p>
+<span class="menu-btn" onclick="toggleMenu()">☰</span>
 </header>
+
+<!-- SIDEBAR -->
+<div id="menu">
+<h3>Menu</h3>
+<p><b>About</b><br>Prince Raj<br>Civil Engineering</p>
+<p><b>Connect</b><br>📧 princeraj788778@gmail.com</p>
+</div>
 
 <nav>
 <a href="#">Home</a>
@@ -190,24 +230,22 @@ Career Engine 🚀
 
 <div class="card">
 <h3>🚆 Railway RRB Group D Recruitment 2026</h3>
-<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="btn">
+<a href="https://www.rrbapply.gov.in/#/auth/home" target="_blank" class="apply-btn">
 Apply Now
 </a>
 </div>
 
 <div class="card">
 <h3>📚 SSC JE Notification 2026</h3>
-<a href="https://ssc.gov.in/#/auth/home" target="_blank" rel="noopener noreferrer" class="btn">
+<a href="https://ssc.gov.in/" target="_blank" class="apply-btn">
 Apply Now
 </a>
 </div>
 
 <div class="card">
-<h3>👮 Rajiv Gandhi Proudyogiki Vishwavidyalaya
-Airport Road, Bhopal-462033, Madhya Pradesh</h3>
-<a href="https://www.rgpv.ac.in/" target="_blank" class="btn">
-Official Website
-</a>
+<h3>🎓 RGPV University Updates</h3>
+<a href="https://www.rgpv.ac.in/" target="_blank" class="btn">Official</a>
+<a href="https://result.rgpv.ac.in/" target="_blank" class="btn">Result</a>
 </div>
 
 </div>
@@ -257,7 +295,11 @@ function closePopup(){
 document.getElementById("telegramPopup").style.display="none";
 }
 
-// show popup after 3 sec
+function toggleMenu(){
+let menu=document.getElementById("menu");
+menu.style.right = (menu.style.right==="0px") ? "-250px" : "0px";
+}
+
 setTimeout(function(){
 document.getElementById("telegramPopup").style.display="block";
 },3000);
