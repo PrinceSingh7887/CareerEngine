@@ -197,7 +197,7 @@ Apply Now
 
 <div class="card">
 <h3>📚 SSC JE Notification 2026</h3>
-<a href="https://www.ssc.gov.in//#/auth/home" target="_blank" class="btn">
+<a href="https://ssc.gov.in/#/auth/home" target="_blank" rel="noopener noreferrer" class="btn">
 Apply Now
 </a>
 </div>
@@ -205,8 +205,8 @@ Apply Now
 <div class="card">
 <h3>👮 Rajiv Gandhi Proudyogiki Vishwavidyalaya
 Airport Road, Bhopal-462033, Madhya Pradesh</h3>
-<a href="https://www.rgpv.ac.in/Index.aspx//#/auth/home" target="_blank" class="btn">
-Apply Now
+<a href="https://www.rgpv.ac.in/" target="_blank" class="btn">
+Official Website
 </a>
 </div>
 
