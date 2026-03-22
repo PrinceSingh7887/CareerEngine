@@ -296,8 +296,13 @@ document.getElementById("telegramPopup").style.display="none";
 }
 
 function toggleMenu(){
-let menu=document.getElementById("menu");
-menu.style.right = (menu.style.right==="0px") ? "-250px" : "0px";
+let menu = document.getElementById("menu");
+
+if(menu.style.right === "0px"){
+menu.style.right = "-250px";
+}else{
+menu.style.right = "0px";
+}
 }
 
 setTimeout(function(){
