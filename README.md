@@ -218,7 +218,7 @@ animation:blink 1.5s infinite;
 
 <body>
 
-<img id="logo" src="logo.png">
+<img id="logo" src="mylogo.png">
 
 <header>
 Career Engine 🚀
