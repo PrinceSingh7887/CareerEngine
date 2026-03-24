@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Important Websites</title>
+<style>
+body{
+font-family:Poppins;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+a{
+display:block;
+margin:15px;
+padding:12px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+width:250px;
+margin-left:auto;
+margin-right:auto;
+}
+
+a:hover{
+background:#1d4ed8;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🔥 Important Websites</h2>
+
+<a href="https://jobstep.in/elementor-1224/" target="_blank">Government Work</a>
+<a href="https://dlrs.bihar.gov.in/SurveyStatused.aspx?did=21" target="_blank">DLRS Bihar</a>
+<a href="https://www.npci.org.in/" target="_blank">NPCI (Aadhar / ATM)</a>
+<a href="https://imageresizer.com/" target="_blank">Image Resizer</a>
+<a href="https://www.remove.bg/" target="_blank">Remove Background</a>
+
+</body>
+</html>
