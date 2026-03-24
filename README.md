@@ -232,16 +232,35 @@ Career Engine 🚀
 <h3>📚 SSC JE Notification</h3>
 <a href="https://ssc.gov.in/" target="_blank" class="apply-btn">Apply Now</a>
 </div>
-
+  <div class="card">
+<h3>🎓 RGPV University Updates</h3>
+<a href="https://www.rgpv.ac.in/" target="_blank" class="btn">Official</a>
+<a href="https://result.rgpv.ac.in/" target="_blank" class="btn">Result</a>
+</div>
+  
 </div>
 
-<!-- CIVIL -->
 <div class="ce-section" id="civil">
-<h2>🏗 Civil Engineering</h2>
+<h2>🏗 Civil Engineering Knowledge</h2>
+<p>Download study materials & AutoCAD files</p>
 
-<a href="COMPLETE 3D FILE.dwg" class="btn" download>AutoCAD</a>
-<a href="Unit-01 ,(CEMENT).pdf" class="btn" download>Cement Notes</a>
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+
+<br><br>
+
+<a href="COMPLETE 3D FILE.dwg" class="btn" download> 📐 AutoCAD Drawing </a>
+<a href="Unit-01 ,(CEMENT).pdf" class="btn" download> 📘 Cement Notes </a>
 </div>
+
+<section style="padding:30px;text-align:center">
+<h2>Results</h2>
+<div class="card">RRB JE Result</div>
+<div class="card">SSC JE Result</div>
+<div class="card">Railway Result</div>
+</section>
+
 
 <!-- FOOTER -->
 <footer>
