@@ -143,15 +143,13 @@ animation:blink 1s infinite;
 50%{opacity:0.5;}
 100%{opacity:1;}
 }
-
 /* CIVIL SECTION */
-.ce-section{
-background:white;
-width:90%;
-margin:auto;
-padding:25px;
+.ce-section img{
+width:250px;
+height:160px;
+object-fit:cover;
 border-radius:10px;
-margin-top:30px;
+margin:10px;
 }
 
 /* FOOTER */
