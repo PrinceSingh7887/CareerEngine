@@ -29,9 +29,8 @@ z-index:1000;
 #logo{
 position:absolute;
 left:10px;
-top:10px;
-width:40px;
-border-radius:50%;
+top:8px;
+width:35px;
 }
 
 /* MENU BUTTON */
@@ -160,6 +159,75 @@ padding:15px;
 text-align:center;
 margin-top:30px;
 }
+  /* TELEGRAM POPUP */
+#telegramPopup{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+#telegramPopup a{
+background:#0088cc;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+}
+
+#telegramPopup button{
+margin-top:10px;
+border:none;
+background:red;
+color:white;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FLOATING TELEGRAM BUTTON */
+.telegram-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0088cc;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+animation:blink 1.5s infinite;
+}
+  /* TOP LINK ICONS */
+.top-links{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:10px;
+flex-wrap:wrap;
+background:rgba(0,0,0,0.3);
+}
+
+.top-links img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid white;
+transition:0.3s;
+}
+
+.top-links img:hover{
+transform:scale(1.2);
+box-shadow:0 0 10px white;
+}
 </style>
 </head>
 
@@ -265,8 +333,40 @@ Career Engine 🚀
 <p>📧 princeraj788778@gmail.com</p>
 <p>© 2026 Career Engine</p>
 </footer>
+<!-- TELEGRAM POPUP -->
+<div id="telegramPopup">
+<h3>Join Telegram 📢</h3>
+<p>Latest Job Updates</p>
+<a href="https://t.me/careerengine" target="_blank">Join Now</a>
+<br><br>
+<button onclick="closePopup()">Close</button>
+</div>
+
+<!-- FLOATING BUTTON -->
+<a href="https://t.me/careerengine" target="_blank" class="telegram-float">
+📢 Join Telegram
+</a>
 
 <script>
+function closePopup(){
+document.getElementById("telegramPopup").style.display="none";
+}
+
+function toggleMenu(){
+let menu = document.getElementById("menu");
+
+if(menu.style.right === "0px"){
+menu.style.right = "-260px";
+}else{
+menu.style.right = "0px";
+}
+}
+
+setTimeout(function(){
+document.getElementById("telegramPopup").style.display="block";
+},3000);
+</script>
+
 function toggleMenu(){
 let menu = document.getElementById("menu");
 
