@@ -16,13 +16,24 @@ background-size:cover;
 /* HEADER */
 header{
 background:#0f172a;
-color:white;
-padding:15px;
-text-align:center;
-font-size:26px;
+color:#fff;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
 position:sticky;
 top:0;
 z-index:1000;
+font-size:26px;
+font-weight:bold;
+box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+header p{
+position:absolute;
+top:38px;
+font-size:12px;
+margin:0;
 }
 
 </body>
@@ -30,9 +41,13 @@ z-index:1000;
 /* LOGO */
 #logo{
 position:absolute;
-left:10px;
-top:8px;
-width:35px;
+left:15px;
+top:50%;
+transform:translateY(-50%);
+width:42px;
+height:42px;
+object-fit:contain;
+border-radius:50%;
 }
 
 /* MENU BUTTON */
@@ -377,6 +392,57 @@ menu.style.right = "-280px";
 }else{
 menu.style.right = "0px";
 }
+  <script>
+
+const music=document.getElementById("bgMusic");
+
+music.volume=0;
+
+window.addEventListener("click",()=>{
+
+music.play();
+
+let v=0;
+
+let fade=setInterval(()=>{
+
+if(v<0.25){
+
+v+=0.01;
+
+music.volume=v;
+
+}else{
+
+clearInterval(fade);
+
+}
+
+},150);
+
+},{once:true});
+
+function closePopup(){
+
+document.getElementById("telegramPopup").style.display="none";
+
+}
+
+function toggleMenu(){
+
+const menu=document.getElementById("menu");
+
+menu.style.right=(menu.style.right==="0px")?"-280px":"0px";
+
+}
+
+setTimeout(()=>{
+
+document.getElementById("telegramPopup").style.display="block";
+
+},3000);
+
+</script>
 }
 </script>
 
