@@ -135,25 +135,38 @@
     .top-links {
       display: flex;
       justify-content: center;
-      gap: 14px;
-      padding: 14px;
+        gap: 16px;
+      padding: 14px 10px;
       flex-wrap: wrap;
       background: rgba(15, 23, 42, 0.65);
     }
 
     .top-links a {
+          display: inline-grid;
+      justify-items: center;
+      gap: 7px;
+      width: 92px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .icon-circle {
       display: inline-flex;
+        align-items: center;
+      justify-content: center;
       width: 62px;
       height: 62px;
-      align-items: center;
-       justify-content: center;
       border-radius: 50%;
       background: #fff;
       border: 2px solid #fff;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .top-links a:hover {
+   .top-links a:hover .icon-circle {
       transform: translateY(-3px) scale(1.06);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     }
@@ -164,6 +177,12 @@
       object-fit: contain;
     }
 
+       .top-links span {
+      min-height: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
     .section,
     .ce-section,
     .results {
@@ -354,22 +373,28 @@
 
   <div class="top-links" aria-label="Useful website links">
     <a href="https://jobstep.in/elementor-1224/" target="_blank" rel="noopener" title="Jobstep">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Jobstep">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Jobstep"></span>
+      <span>Jobstep</span> 
     </a>
     <a href="https://dlrs.bihar.gov.in/SurveyStatused.aspx?did=21" target="_blank" rel="noopener" title="Bihar land survey">
-      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Bihar land survey">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Bihar land survey"></span>
+      <span>Land Survey</span>
     </a>
     <a href="https://www.npci.org.in/" target="_blank" rel="noopener" title="NPCI">
-      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041884.png" alt="NPCI">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1041/1041884.png" alt="NPCI"></span>
+      <span>NPCI</span>
     </a>
     <a href="https://imageresizer.com/" target="_blank" rel="noopener" title="Image resizer">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Image resizer">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Image resizer"></span>
+      <span>Image Resize</span>
     </a>
     <a href="https://www.remove.bg/" target="_blank" rel="noopener" title="Remove background">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Remove background">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Remove background"></span>
+      <span>Remove BG</span>
     </a>
     <a href="important.html" title="Important websites">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Important websites">
+      <span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Important websites"></span>
+      <span>Important Sites</span>  
     </a>
   </div>
 
