@@ -439,10 +439,10 @@
   <a href="https://t.me/careerengine" target="_blank" rel="noopener" class="telegram-float">📢 Join Telegram</a>
 
     <button class="music-btn" type="button" aria-label="Play or pause music" onclick="toggleMusic()">🔇</button>
-  <audio id="bgMusic" src="song.mp3" loop preload="auto"></audio>
+  <audio id="bgMusic" src="song.mp3.mp3" loop preload="auto"></audio>
   
   <script>
-       const bgMusic = document.getElementById("bgMusic");
+    const bgMusic = document.getElementById("bgMusic");
     const musicButton = document.querySelector(".music-btn");
     let musicStarted = false;
     
@@ -461,7 +461,7 @@
       document.getElementById("telegramPopup").style.display = "none";
     }
 
-    function playMusic() {
+      function playMusic() {
       bgMusic.volume = 0.25;
       bgMusic.play().then(function () {
         musicStarted = true;
