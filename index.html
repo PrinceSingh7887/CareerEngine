@@ -98,3 +98,399 @@
     }
 
     #menu.open {
+       right: 0;
+    }
+
+    .close-menu {
+      float: right;
+      border: 0;
+      border-radius: 6px;
+      padding: 5px 10px;
+      color: #fff;
+      background: #ef4444;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px;
+      background: #1e293b;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      background: #2563eb;
+    }
+
+    .top-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      padding: 14px;
+      flex-wrap: wrap;
+      background: rgba(15, 23, 42, 0.65);
+    }
+
+    .top-links a {
+      display: inline-flex;
+      width: 62px;
+      height: 62px;
+      align-items: center;
+       justify-content: center;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .top-links a:hover {
+      transform: translateY(-3px) scale(1.06);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .top-links img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+    }
+
+    .section,
+    .ce-section,
+    .results {
+      width: min(920px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(24px, 5vw, 34px);
+      color: #0f172a;
+    }
+
+    .card {
+      max-width: 640px;
+      margin: 15px auto;
+      padding: 20px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+    }
+
+    .card h3 {
+      margin: 0 0 14px;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .btn,
+    .apply-btn {
+      display: inline-block;
+      margin: 6px;
+        padding: 9px 16px;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn {
+      background: #2563eb;
+    }
+
+    .apply-btn {
+      background: #dc2626;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.62; }
+    }
+
+    .civil-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 18px auto;
+    }
+
+    .civil-gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 18px;
+      color: #fff;
+      background: #0f172a;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    #telegramPopup {
+      display: none;
+       position: fixed;
+      right: 20px;
+      bottom: 84px;
+      z-index: 1100;
+      width: min(270px, calc(100vw - 32px));
+      padding: 20px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    }
+
+    #telegramPopup h3 {
+      margin-top: 0;
+    }
+
+    #telegramPopup a {
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 6px;
+      color: #fff;
+      background: #0088cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    #telegramPopup button {
+      margin-top: 12px;
+      border: 0;
+      border-radius: 5px;
+      padding: 7px 11px;
+      color: #fff;
+      background: #dc2626;
+      cursor: pointer;
+    }
+
+    .telegram-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      padding: 12px 18px;
+      border-radius: 30px;
+      color: #fff;
+      background: #0088cc;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+      .music-btn {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 50%;
+      color: #fff;
+      background: #0f172a;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .music-btn:hover {
+      background: #2563eb;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 10px 64px;
+      }
+
+      .civil-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .telegram-float {
+        right: 12px;
+        bottom: 12px;
+      }
+       }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="logo" src="mylogo.png" alt="Career Engine logo">
+    <div class="brand">
+      <span class="brand-title">Career Engine 🚀</span>
+      <span class="brand-subtitle">Latest Government Job Updates</span>
+    </div>
+    <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <aside id="menu" aria-label="Site menu">
+    <button class="close-menu" type="button" onclick="toggleMenu()">Close</button>
+    <h3>Menu</h3>
+    <p><strong>About</strong><br>Prince Raj<br>Civil Engineering</p>
+    <p><strong>Connect</strong><br>📧 princeraj788778@gmail.com</p>
+  </aside>
+
+  <div class="top-links" aria-label="Useful website links">
+    <a href="https://jobstep.in/elementor-1224/" target="_blank" rel="noopener" title="Jobstep">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Jobstep">
+    </a>
+    <a href="https://dlrs.bihar.gov.in/SurveyStatused.aspx?did=21" target="_blank" rel="noopener" title="Bihar land survey">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Bihar land survey">
+    </a>
+    <a href="https://www.npci.org.in/" target="_blank" rel="noopener" title="NPCI">
+      <img src="https://cdn-icons-png.flaticon.com/512/1041/1041884.png" alt="NPCI">
+    </a>
+    <a href="https://imageresizer.com/" target="_blank" rel="noopener" title="Image resizer">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Image resizer">
+    </a>
+    <a href="https://www.remove.bg/" target="_blank" rel="noopener" title="Remove background">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Remove background">
+    </a>
+    <a href="important.html" title="Important websites">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Important websites">
+    </a>
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#latest-jobs">Latest Jobs</a>
+    <a href="important.html">Important Websites</a>
+    <a href="#civil">Civil</a>
+    <a href="#results">Results</a>
+  </nav>
+
+  <main>
+    <section class="section" id="latest-jobs">
+      <h2>Latest Jobs</h2>
+
+      <article class="card">
+        <h3>🚆 Railway RRB Group D Recruitment 2026</h3>
+        <a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener" class="apply-btn">Apply Now</a>
+      </article>
+
+      <article class="card">
+        <h3>📚 SSC JE Notification</h3>
+        <a href="https://ssc.gov.in/" target="_blank" rel="noopener" class="apply-btn">Apply Now</a>
+      </article>
+
+      <article class="card">
+        <h3>🎓 RGPV University Updates</h3>
+        <a href="https://www.rgpv.ac.in/" target="_blank" rel="noopener" class="btn">Official</a>
+        <a href="https://result.rgpv.ac.in/" target="_blank" rel="noopener" class="btn">Result</a>
+      </article>
+    </section>
+
+    <section class="ce-section" id="civil">
+      <h2>🏗 Civil Engineering Knowledge</h2>
+      <p>Download study materials &amp; AutoCAD files</p>
+
+      <div class="civil-gallery">
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80" alt="Civil engineering work site">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Construction planning">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Bridge construction">
+      </div>
+
+      <a href="COMPLETE 3D FILE.dwg" class="btn" download>📐 AutoCAD Drawing</a>
+      <a href="Unit-01 ,(CEMENT).pdf" class="btn" download>📘 Cement Notes</a>
+    </section>
+
+    <section class="results" id="results">
+      <h2>Results</h2>
+      <div class="card">RRB JE Result</div>
+      <div class="card">SSC JE Result</div>
+      <div class="card">Railway Result</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>📧 princeraj788778@gmail.com</p>
+    <p>© 2026 Career Engine</p>
+  </footer>
+  <div id="telegramPopup" role="dialog" aria-labelledby="telegramTitle">
+    <h3 id="telegramTitle">Join Telegram 📢</h3>
+    <p>Latest Job Updates</p>
+    <a href="https://t.me/careerengine" target="_blank" rel="noopener">Join Now</a>
+    <br>
+    <button type="button" onclick="closePopup()">Close</button>
+  </div>
+
+  <a href="https://t.me/careerengine" target="_blank" rel="noopener" class="telegram-float">📢 Join Telegram</a>
+
+    <button class="music-btn" type="button" aria-label="Play or pause music" onclick="toggleMusic()">🔇</button>
+  <audio id="bgMusic" src="song.mp3" loop preload="auto"></audio>
+  
+  <script>
+       const bgMusic = document.getElementById("bgMusic");
+    const musicButton = document.querySelector(".music-btn");
+    let musicStarted = false;
+    
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      const popup = document.getElementById("telegramPopup");
+
+      menu.classList.toggle("open");
+
+      if (menu.classList.contains("open")) {
+        popup.style.display = "none";
+      }
+    }
+
+    function closePopup() {
+      document.getElementById("telegramPopup").style.display = "none";
+    }
+
+    function playMusic() {
+      bgMusic.volume = 0.25;
+      bgMusic.play().then(function () {
+        musicStarted = true;
+        musicButton.textContent = "🔊";
+      }).catch(function () {
+        musicButton.textContent = "🔇";
+      });
+    }
+
+    function toggleMusic() {
+      if (bgMusic.paused) {
+        playMusic();
+      } else {
+        bgMusic.pause();
+        musicButton.textContent = "🔇";
+      }
+    }
+
+    window.addEventListener("click", function () {
+      if (!musicStarted) {
+        playMusic();
+      }
+    }, { once: true });
+    
+    window.setTimeout(function () {
+      if (!document.getElementById("menu").classList.contains("open")) {
+        document.getElementById("telegramPopup").style.display = "block";
+      }
+    }, 3000);
+  </script>
+</body>
+</html>
