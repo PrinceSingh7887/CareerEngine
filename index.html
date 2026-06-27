@@ -213,6 +213,47 @@
       margin: 0 0 6px;
       color: #0f172a;
       font-size: clamp(26px, 5vw, 42px);
+        display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 9px;
+      border: 1px solid #ef4444;
+      border-radius: 999px;
+      color: #dc2626;
+      background: #fff5f5;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      line-height: 1;
+      animation: liveBlink 1s infinite; 
+    }
+
+      .live-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ef4444;
+      box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.24);
+    }
+
+    @keyframes liveBlink {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.45;
+        transform: scale(0.96);
+      }
     }
 
     .hero-note p {
@@ -486,7 +527,7 @@
   <header>
      <img id="logo" src="career-engine-logo.png" alt="Career Engine logo">
     <div class="brand">
-        <span class="brand-title">Career Engine</span>
+        <span class="brand-title">Career Engine🚀</span>
       <span class="brand-subtitle">Latest Government Job Updates</span>
     </div>
     <button class="menu-btn" type="button" aria-label="Open menu" onclick="toggleMenu()">☰</button>
@@ -544,7 +585,7 @@
       <div class="ticker">Latest Update: Sarkari Job, Result, Admit Card, Answer Key aur Civil Engineering material ek jagah.</div>
 
     <section class="hero-note">
-      <h1>Career Engine</h1>
+      <h1>Career Engine <span class="live-badge"><span class="live-dot"></span>LIVE</span></h1>
       <p>Government job notification, online form, admit card, result aur civil engineering study material.</p>
     </section>
 
