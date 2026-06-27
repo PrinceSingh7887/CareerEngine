@@ -183,6 +183,70 @@
       align-items: flex-start;
       justify-content: center;
     }
+
+   .ticker {
+      width: min(960px, calc(100% - 24px));
+      margin: 16px auto 0;
+      padding: 11px 14px;
+      border-radius: 8px;
+      color: #fff;
+      background: #dc2626;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
+    }
+
+    .hero-note {
+      width: min(960px, calc(100% - 24px));
+      margin: 14px auto 0;
+      padding: 16px;
+      border-radius: 8px;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+    }
+
+    .hero-note h1 {
+      margin: 0 0 6px;
+      color: #0f172a;
+      font-size: clamp(26px, 5vw, 42px);
+    }
+
+    .hero-note p {
+      margin: 0;
+      color: #475569;
+    }
+
+    .quick-buttons {
+      width: min(960px, calc(100% - 24px));
+      margin: 16px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .quick-buttons a {
+      display: grid;
+      place-items: center;
+      min-height: 58px;
+      padding: 10px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
+    }
+
+    .quick-buttons a:nth-child(1) { background: #b91c1c; }
+    .quick-buttons a:nth-child(2) { background: #0f766e; }
+    .quick-buttons a:nth-child(3) { background: #1d4ed8; }
+    .quick-buttons a:nth-child(4) { background: #7c2d12; }
+    .quick-buttons a:nth-child(5) { background: #4338ca; }
+    .quick-buttons a:nth-child(6) { background: #15803d; }
+    .quick-buttons a:nth-child(7) { background: #be123c; }
+    .quick-buttons a:nth-child(8) { background: #0369a1; } 
+    
     .section,
     .ce-section,
     .results {
@@ -196,6 +260,62 @@
       margin: 0 0 18px;
       font-size: clamp(24px, 5vw, 34px);
       color: #0f172a;
+    }
+    
+    .updates-grid {
+      width: min(1120px, calc(100% - 24px));
+      margin: 28px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .update-panel {
+      overflow: hidden;
+      border: 2px solid #0f172a;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+    }
+
+    .update-panel h2 {
+      margin: 0;
+      padding: 11px;
+      color: #fff;
+      background: #0f172a;
+      font-size: 21px;
+      text-align: center;
+    }
+
+    .update-panel ul {
+      margin: 0;
+      padding: 14px 20px 18px 30px;
+    }
+
+    .update-panel li {
+      margin: 9px 0;
+      line-height: 1.42;
+    }
+
+    .update-panel a {
+      color: #0f3ea8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .update-panel a:hover {
+      color: #dc2626;
+      text-decoration: underline;
+    }
+
+    .view-more {
+      display: block;
+      margin: 0 14px 14px;
+      padding: 9px;
+      border-radius: 6px;
+      color: #fff !important;
+      background: #2563eb;
+      text-align: center;
     }
 
     .card {
@@ -347,6 +467,11 @@
         grid-template-columns: 1fr;
       }
 
+       .quick-buttons,
+      .updates-grid {
+        grid-template-columns: 1fr;
+      }
+      
       .telegram-float {
         right: 12px;
         bottom: 12px;
@@ -401,12 +526,106 @@
   <nav>
     <a href="#">Home</a>
     <a href="#latest-jobs">Latest Jobs</a>
+    <a href="#admit-card">Admit Card</a>
+    <a href="#answer-key">Answer Key</a>
     <a href="important.html">Important Websites</a>
     <a href="#civil">Civil</a>
     <a href="#results">Results</a>
   </nav>
 
   <main>
+      <div class="ticker">Latest Update: Sarkari Job, Result, Admit Card, Answer Key aur Civil Engineering material ek jagah.</div>
+
+    <section class="hero-note">
+      <h1>Career Engine</h1>
+      <p>Government job notification, online form, admit card, result aur civil engineering study material.</p>
+    </section>
+
+    <section class="quick-buttons" aria-label="Quick action links">
+      <a href="#latest-jobs">Latest Jobs</a>
+      <a href="#results">Results</a>
+      <a href="#admit-card">Admit Card</a>
+      <a href="#answer-key">Answer Key</a>
+      <a href="#civil">Civil Engg.</a>
+      <a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Official</a>
+      <a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway Apply</a>
+      <a href="important.html">Important Sites</a>
+    </section>
+
+    <section class="updates-grid" aria-label="Career updates">
+      <div class="update-panel">
+        <h2>Latest Jobs</h2>
+        <ul>
+          <li><a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway RRB Group D Online Form 2026</a></li>
+          <li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC JE Notification / Online Form</a></li>
+          <li><a href="https://www.joinindianarmy.nic.in/" target="_blank" rel="noopener">Indian Army Recruitment</a></li>
+          <li><a href="https://www.joinindiannavy.gov.in/" target="_blank" rel="noopener">Indian Navy Recruitment</a></li>
+          <li><a href="https://agnipathvayu.cdac.in/" target="_blank" rel="noopener">Air Force Agniveer Vayu</a></li>
+        </ul>
+        <a class="view-more" href="#latest-jobs">View More Jobs</a>
+      </div>
+
+      <div class="update-panel">
+        <h2>Results</h2>
+        <ul>
+          <li><a href="https://result.rgpv.ac.in/" target="_blank" rel="noopener">RGPV University Result</a></li>
+          <li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC JE Result Update</a></li>
+          <li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway RRB Result Notice</a></li>
+          <li><a href="https://ctet.nic.in/" target="_blank" rel="noopener">CTET Result / Score Card</a></li>
+          <li><a href="https://biharboardonline.bihar.gov.in/" target="_blank" rel="noopener">Bihar Board Result</a></li>
+        </ul>
+        <a class="view-more" href="#results">View More Results</a>
+      </div>
+
+      <div class="update-panel" id="admit-card">
+        <h2>Admit Card</h2>
+        <ul>
+          <li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Admit Card Download</a></li>
+          <li><a href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener">Railway Exam Admit Card</a></li>
+          <li><a href="https://ctet.nic.in/" target="_blank" rel="noopener">CTET Admit Card</a></li>
+          <li><a href="https://jeemain.nta.ac.in/" target="_blank" rel="noopener">JEE Main Admit Card</a></li>
+          <li><a href="https://cuet.nta.nic.in/" target="_blank" rel="noopener">CUET Admit Card</a></li>
+        </ul>
+        <a class="view-more" href="#admit-card">View More Admit Cards</a>
+      </div>
+
+      <div class="update-panel" id="answer-key">
+        <h2>Answer Key</h2>
+        <ul>
+          <li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Answer Key</a></li>
+          <li><a href="https://ctet.nic.in/" target="_blank" rel="noopener">CTET Answer Key</a></li>
+          <li><a href="https://ugcnet.nta.ac.in/" target="_blank" rel="noopener">UGC NET Answer Key</a></li>
+          <li><a href="https://jeemain.nta.ac.in/" target="_blank" rel="noopener">JEE Main Answer Key</a></li>
+          <li><a href="https://neet.nta.nic.in/" target="_blank" rel="noopener">NEET Answer Key</a></li>
+        </ul>
+        <a class="view-more" href="#answer-key">View More Answer Keys</a>
+      </div>
+
+      <div class="update-panel">
+        <h2>Documents</h2>
+        <ul>
+          <li><a href="https://www.remove.bg/" target="_blank" rel="noopener">Photo Background Remove</a></li>
+          <li><a href="https://imageresizer.com/" target="_blank" rel="noopener">Photo Resize Tool</a></li>
+          <li><a href="https://www.npci.org.in/" target="_blank" rel="noopener">NPCI Aadhaar Bank Status</a></li>
+          <li><a href="https://dlrs.bihar.gov.in/SurveyStatused.aspx?did=21" target="_blank" rel="noopener">Bihar Land Survey Status</a></li>
+          <li><a href="important.html">All Important Websites</a></li>
+        </ul>
+        <a class="view-more" href="important.html">View More Documents</a>
+      </div>
+
+      <div class="update-panel">
+        <h2>Civil Engineering</h2>
+        <ul>
+          <li><a href="COMPLETE 3D FILE.dwg" download>AutoCAD 3D Drawing Download</a></li>
+          <li><a href="Unit-01 ,(CEMENT).pdf" download>Cement Notes PDF</a></li>
+          <li><a href="#civil">Civil Site Images</a></li>
+          <li><a href="https://www.rgpv.ac.in/" target="_blank" rel="noopener">RGPV Civil Updates</a></li>
+          <li><a href="https://result.rgpv.ac.in/" target="_blank" rel="noopener">RGPV Result Portal</a></li>
+        </ul>
+        <a class="view-more" href="#civil">View Civil Material</a>
+      </div>
+    </section>
+
     <section class="section" id="latest-jobs">
       <h2>Latest Jobs</h2>
 
