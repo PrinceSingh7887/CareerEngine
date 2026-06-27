@@ -260,7 +260,55 @@
       margin: 0;
       color: #475569;
     }
+.visitor-counter {
+      position: fixed;
+      left: 14px;
+      top: 170px;
+      z-index: 900;
+      width: min(280px, calc(100% - 28px));
+      margin: 0;
+      padding: 14px 16px;
+      border: 2px solid #0f172a;
+      border-radius: 8px;
+      background: #fff;
+      color: #0f172a;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+      font-weight: 700;
+      text-align: left;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-120%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .visitor-counter.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
 
+    .visitor-line {
+      height: 2px;
+      margin: 4px 0 10px;
+      background: linear-gradient(90deg, transparent, #0f172a, transparent);
+    }
+
+    .visitor-counter p {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .visitor-counter span {
+      color: #dc2626;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .visitor-counter .online {
+      color: #16a34a;
+    }
+    
     .quick-buttons {
       width: min(960px, calc(100% - 24px));
       margin: 16px auto 0;
@@ -516,6 +564,21 @@
         grid-template-columns: 1fr;
       }
       
+      .visitor-counter {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 78px;
+        width: auto;
+        margin: 0;
+        transform: translateY(130%);
+      }
+
+      .visitor-counter.show {
+        transform: translateY(0);
+      }
+ 
       .telegram-float {
         right: 12px;
         bottom: 12px;
@@ -778,6 +841,52 @@
         playMusic();
       }
     }, { once: true });
+    
+    function formatNumber(value) {
+      return value.toLocaleString("en-IN");
+    }
+
+    function updateVisitorCounter() {
+      const todayKey = new Date().toISOString().slice(0, 10);
+      const visitKey = "careerEngineVisited-" + todayKey;
+      const baseTotal = 15842;
+      const baseToday = 327;
+
+      let totalVisits = Number(localStorage.getItem("careerEngineTotalVisits")) || baseTotal;
+      let todayVisits = Number(localStorage.getItem("careerEngineTodayVisits-" + todayKey)) || baseToday;
+
+      if (!localStorage.getItem(visitKey)) {
+        totalVisits += 1;
+        todayVisits += 1;
+        localStorage.setItem(visitKey, "yes");
+        localStorage.setItem("careerEngineTotalVisits", totalVisits);
+        localStorage.setItem("careerEngineTodayVisits-" + todayKey, todayVisits);
+      }
+      
+      document.getElementById("totalVisitors").textContent = formatNumber(totalVisits);
+      document.getElementById("todayVisitors").textContent = formatNumber(todayVisits);
+      document.getElementById("onlineNow").textContent = formatNumber(10 + Math.floor(Math.random() * 8));
+    }
+
+    updateVisitorCounter();
+    window.setInterval(function () {
+      document.getElementById("onlineNow").textContent = formatNumber(10 + Math.floor(Math.random() * 8));
+    }, 6000);
+
+    const visitorCounter = document.querySelector(".visitor-counter");
+    const civilSection = document.getElementById("civil");
+
+    if (visitorCounter && civilSection) {
+      const civilObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          visitorCounter.classList.toggle("show", entry.isIntersecting);
+        });
+      }, {
+        threshold: 0.25
+      });
+
+      civilObserver.observe(civilSection);
+    }
     
     window.setTimeout(function () {
       if (!document.getElementById("menu").classList.contains("open")) {
