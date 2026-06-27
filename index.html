@@ -260,7 +260,8 @@
       margin: 0;
       color: #475569;
     }
-.visitor-counter {
+    
+    .visitor-counter {
       position: fixed;
       left: 14px;
       top: 170px;
@@ -280,6 +281,7 @@
       transform: translateX(-120%);
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
+    
     .visitor-counter.show {
       opacity: 1;
       pointer-events: auto;
@@ -651,7 +653,15 @@
       <h1>Career Engine <span class="live-badge"><span class="live-dot"></span>LIVE</span></h1>
       <p>Government job notification, online form, admit card, result aur civil engineering study material.</p>
     </section>
-
+    
+  <section class="visitor-counter" aria-label="Visitor counter">
+      <div class="visitor-line"></div>
+      <p>👁 Total Visitors : <span id="totalVisitors">15,842</span></p>
+      <p>📅 Today's Visitors : <span id="todayVisitors">327</span></p>
+      <p>🟢 Online Now : <span id="onlineNow" class="online">12</span></p>
+      <div class="visitor-line"></div>
+    </section>
+    
     <section class="quick-buttons" aria-label="Quick action links">
       <a href="#latest-jobs">Latest Jobs</a>
       <a href="#results">Results</a>
@@ -784,6 +794,7 @@
     <p>📧 princeraj788778@gmail.com</p>
     <p>© 2026 Career Engine</p>
   </footer>
+  
   <div id="telegramPopup" role="dialog" aria-labelledby="telegramTitle">
     <h3 id="telegramTitle">Join Telegram 📢</h3>
     <p>Latest Job Updates</p>
@@ -793,8 +804,7 @@
   </div>
 
   <a href="https://t.me/careerengine" target="_blank" rel="noopener" class="telegram-float">📢 Join Telegram</a>
-
-    <button class="music-btn" type="button" aria-label="Play or pause music" onclick="toggleMusic()">🔇</button>
+   <button class="music-btn" type="button" aria-label="Play or pause music" onclick="toggleMusic()">🔇</button>
   <audio id="bgMusic" src="song.mp3.mp3" loop preload="auto"></audio>
   
   <script>
